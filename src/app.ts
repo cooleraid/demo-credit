@@ -56,7 +56,7 @@ class App {
     routes.forEach(route => {
       this.app.use('/', route.router);
     });
-    this.app.use((req, res) => res.status(404).send({ status: 'error', message: 'Not Found' }));
+    this.app.use((req, res) => res.status(404).send({ status: 'error', message: `${req.method} ${req.originalUrl} Not Found` }));
   }
 
   private initializeErrorHandling() {

@@ -2,11 +2,11 @@ import Knex from 'knex';
 import { DB_HOST, DB_PORT, DB_USER, DB_PASSWORD, DB_NAME } from '@config';
 
 const db = Knex({
-  client: 'mysql',
+  client: 'mysql2',
   useNullAsDefault: true,
   connection: {
     charset: 'utf8',
-    timezone: 'UTC+1',
+    timezone: '+01:00',
     host: DB_HOST,
     port: Number(DB_PORT),
     user: DB_USER,

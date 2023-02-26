@@ -1,10 +1,10 @@
 import { DB_HOST, DB_PORT, DB_USER, DB_PASSWORD, DB_NAME } from './src/config';
 
 const dbConfig = {
-  client: 'mysql',
+  client: 'mysql2',
   connection: {
     charset: 'utf8',
-    timezone: 'UTC',
+    timezone: '+01:00',
     host: DB_HOST,
     port: DB_PORT,
     user: DB_USER,
