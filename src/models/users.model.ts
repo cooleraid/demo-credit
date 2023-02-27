@@ -1,5 +1,5 @@
 import { Model, ModelObject } from 'objection';
-import { User } from '@interfaces/users.interface';
+import { User } from '@/interfaces/user.interface';
 
 export class Users extends Model implements User {
   id!: number;
