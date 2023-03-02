@@ -28,10 +28,7 @@ class App {
   }
 
   public listen() {
-    this.app.listen(this.port, () => {
-      logger.info(`${this.env}`);
-      logger.info(`http://localhost:${this.port}`);
-    });
+    return this.app;
   }
 
   public getApp() {
